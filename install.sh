@@ -18,7 +18,7 @@ python3 get-pip.py --user
 sudo mkdir -p /usr/local/bin
 sudo ln -sf /opt/homebrew/Cellar/python@3.10/3.10.11/bin/pip3.10 /usr/local/bin/pip
 # install ansible
-pip3 install --user ansible
+pip install --user ansible
 sudo ln -sf ~/Library/Python/3.10/bin/ansible* /usr/local/bin/
 
 installdir="/tmp/setup-my-mac-$RANDOM"
