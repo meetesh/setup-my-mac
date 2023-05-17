@@ -15,7 +15,7 @@ brew install python@3.10
 # install pip
 curl https://bootstrap.pypa.io/pip/get-pip.py -o get-pip.py
 python3 get-pip.py --user
-sudo ln -sf ~/Library/Python/3.10/bin/pip /usr/local/bin/pip
+sudo ln -sf /opt/homebrew/Cellar/python@3.10/3.10.11/bin/pip3.10 /usr/local/bin/pip
 # install ansible
 pip3 install --user ansible
 sudo ln -sf ~/Library/Python/3.10/bin/ansible* /usr/local/bin/
