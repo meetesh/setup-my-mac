@@ -38,4 +38,7 @@ echo "Cleaning up..."
 
 rm -Rfv /tmp/$installdir
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 echo "Voila! We are done!"
