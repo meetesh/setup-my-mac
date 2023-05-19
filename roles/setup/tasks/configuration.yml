@@ -18,7 +18,9 @@
     state: link
 
 - name: make zsh default shell
-  shell: chsh -s $(which zsh)
+  shell: |
+      sudo sh -c "echo $(which zsh) >> /etc/shells"
+      chsh -s $(which zsh)
 
 - name: initialise jenv
   shell: jenv init -
